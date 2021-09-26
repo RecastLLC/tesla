@@ -55,7 +55,7 @@ defmodule Tesla.Mixfile do
       {:mime, "~> 1.0 or ~> 2.0"},
 
       # http clients
-      {:ibrowse, "4.4.0", optional: true},
+      {:ibrowse, "~> 4.4.0", optional: true},
       {:hackney, "~> 1.6", optional: true},
       {:gun, "~> 1.3", optional: true},
       {:finch, "~> 0.3", optional: true},
@@ -81,7 +81,7 @@ defmodule Tesla.Mixfile do
 
       # override httparrot dependencies
       {:cowlib, "~> 2.9", only: :test, override: true},
-      {:ranch, "~> 1.8", only: :test, override: true}
+      {:ranch, "~> 2.1", only: :test, override: true}
     ]
   end
 
